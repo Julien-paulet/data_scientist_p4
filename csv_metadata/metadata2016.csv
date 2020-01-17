@@ -1,0 +1,47 @@
+name,datatype,fieldName,desc
+OSEBuildingID,number,osebuildingid,A unique identifier assigned to each property covered by the Seattle Benchmarking Ordinance for tracking and identification purposes.
+DataYear,number,datayear,Calendar year (January-December) represented by each data record.
+BuildingType,text,buildingtype,City of Seattle building type classification.
+PrimaryPropertyType,text,primarypropertytype,"The primary use of a property (e.g. office, retail store). Primary use is defined as a function that accounts for more than 50% of a property. This is the Property Type - EPA Calculated field from Portfolio Manager."
+PropertyName,text,propertyname,Official or common property name as entered in EPA’s Portfolio Manager.
+Address,text,address,Property street address
+City,text,city,Property city
+State,text,state,Property state
+ZipCode,number,zipcode,Property zip
+TaxParcelIdentificationNumber,text,taxparcelidentificationnumber,Property King County PIN 
+CouncilDistrictCode,number,councildistrictcode,Property City of Seattle council district.
+Neighborhood,text,neighborhood,Property neighborhood area defined by the City of Seattle Department of Neighborhoods.
+Latitude,number,latitude,Property latitude.
+Longitude,number,longitude,Property longitude.
+YearBuilt,number,yearbuilt,Year in which a property was constructed or underwent a complete renovation.
+NumberofBuildings,number,numberofbuildings,"Number of buildings included in the property's report. In cases where a property is reporting as a campus, multiple buildings may be included in one report."
+NumberofFloors,number,numberoffloors,Number of floors reported in Portfolio Manager
+PropertyGFATotal,number,propertygfatotal,Total building and parking gross floor area.
+PropertyGFAParking,number,propertygfaparking,"Total space in square feet of all types of parking (Fully Enclosed, Partially Enclosed, and Open)."
+PropertyGFABuilding(s),number,propertygfabuilding_s,"Total floor space in square feet between the outside surfaces of a building’s enclosing walls. This includes all areas inside the building(s), such as tenant space, common areas, stairwells, basements, storage, etc. "
+ListOfAllPropertyUseTypes,text,listofallpropertyusetypes,All property uses reported in Portfolio Manager
+LargestPropertyUseType,text,largestpropertyusetype,"The largest use of a property (e.g. office, retail store) by GFA. "
+LargestPropertyUseTypeGFA,number,largestpropertyusetypegfa,The gross floor area (GFA) of the largest use of the property.
+SecondLargestPropertyUseType,text,secondlargestpropertyusetype,"The second largest use of a property (e.g. office, retail store) by GFA. "
+SecondLargestPropertyUseTypeGFA,number,secondlargestpropertyuse,The gross floor area (GFA) of the second largest use of the property.
+ThirdLargestPropertyUseType,text,thirdlargestpropertyusetype,"The third largest use of a property (e.g. office, retail store) by GFA. "
+ThirdLargestPropertyUseTypeGFA,number,thirdlargestpropertyusetypegfa,The gross floor area (GFA) of the third largest use of the property.
+YearsENERGYSTARCertified,number,yearsenergystarcertified,Years the property has received ENERGY STAR certification.
+ENERGYSTARScore,text,energystarscore,"An EPA calculated 1-100 rating that assesses a property’s overall energy performance, based on national data to control for differences among climate, building uses, and operations. A score of 50 represents the national median."
+SiteEUI(kBtu/sf),number,siteeui_kbtu_sf,"Site Energy Use Intensity (EUI) is a property's Site Energy Use divided by its gross floor area. Site Energy Use is the annual amount of all the energy consumed by the property on-site, as reported on utility bills. Site EUI is measured in thousands of British thermal units (kBtu) per square foot."
+SiteEUIWN(kBtu/sf),number,siteeuiwn_kbtu_sf,Weather Normalized (WN) Site Energy Use Intensity (EUI) is a property's WN Site Energy divided by its gross floor area (in square feet). WN Site Energy is the Site Energy Use the property would have consumed during 30-year average weather conditions. WN Site EUI is measured in measured in thousands of British thermal units (kBtu) per square foot.
+SourceEUI(kBtu/sf),number,sourceeui_kbtu_sf,"Source Energy Use Intensity (EUI) is a property's Source Energy Use divided by its gross floor area. Source Energy Use is the annual energy used to operate the property, including losses from generation, transmission, & distribution. Source EUI is measured in thousands of British thermal units (kBtu) per square foot."
+SourceEUIWN(kBtu/sf),number,sourceeuiwn_kbtu_sf,Weather Normalized (WN) Source Energy Use Intensity (EUI) is a property's WN Source Energy divided by its gross floor area. WN Source Energy is the Source Energy Use the property would have consumed during 30-year average weather conditions. WN Source EUI is measured in measured in thousands of British thermal units (kBtu) per square foot.
+SiteEnergyUse(kBtu),number,siteenergyuse_kbtu,The annual amount of energy consumed by the property from all sources of energy.
+SiteEnergyUseWN(kBtu),number,siteenergyusewn_kbtu,"The annual amount of energy consumed by the property from all sources of energy, adjusted to what the property would have consumed during 30-year average weather conditions."
+SteamUse(kBtu),number,steamuse_kbtu,"The annual amount of district steam consumed by the property on-site, measured in thousands of British thermal units (kBtu)."
+Electricity(kWh),number,electricity_kwh,"The annual amount of electricity consumed by the property on-site, including electricity purchased from the grid and generated by onsite renewable systems, measured in kWh. "
+Electricity(kBtu),number,electricity_kbtu,"The annual amount of electricity consumed by the property on-site, including electricity purchased from the grid and generated by onsite renewable systems, measured in thousands of British thermal units (kBtu)."
+NaturalGas(therms),number,naturalgas_therms,"The annual amount of utility-supplied natural gas consumed by the property, measured in therms."
+NaturalGas(kBtu),number,naturalgas_kbtu,"The annual amount of utility-supplied natural gas consumed by the property, measured in thousands of British thermal units (kBtu)."
+DefaultData,checkbox,defaultdata,The property used default data for at least one property characteristic.
+Comments,text,comments,Comments by a building owner or agent to provide context to the building’s energy use.  
+ComplianceStatus,text,compliancestatus,Whether a property has met energy benchmarking requirements for the current reporting year. 
+Outlier,text,outlier,Whether a property is a high or low outlier (Y/N)
+TotalGHGEmissions,text,totalghgemissions,"The total amount of greenhouse gas emissions, including carbon dioxide, methane, and nitrous oxide gases released into the atmosphere as a result of energy consumption at the property, measured in metric tons of carbon dioxide equivalent. This calculation uses a GHG emissions factor from Seattle CIty Light's portfolio of generating resources. This uses Seattle City Light's 2015 emissions factor of 52.44 lbs CO2e/MWh until the 2016 factor is available. Enwave steam factor = 170.17 lbs CO2e/MMBtu. Gas factor sourced from EPA Portfolio Manager = 53.11 kg CO2e/MBtu. "
+GHGEmissionsIntensity,text,ghgemissionsintensity,"Total Greenhouse Gas Emissions divided by property's gross floor area, measured in kilograms of carbon dioxide equivalent per square foot. This calculation uses a GHG emissions factor from Seattle City Light's portfolio of generating resources"
